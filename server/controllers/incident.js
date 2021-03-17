@@ -88,7 +88,7 @@ module.exports.processEditPage =(req, res, next) => {
             res.end(err);
         }
         else{
-            //refresh the booklist
+            //refresh the incidentlist
             res.redirect('/incident-list');
         }
 
