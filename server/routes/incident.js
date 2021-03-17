@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// connect to our Book Model
+// connect to our Incident Model
 let Book = require('../models/incident');
 
 let incidentController = require('../controllers/incident');
@@ -22,7 +22,6 @@ router.post('/add', incidentController.processAddPage);
 router.get('/edit/:id', incidentController.displayEditPage);
 
 /* 
-* add your code to 
 * POST Route for processing the Edit page - UPDATE Operation 
 */
 router.post('/edit/:id', incidentController.processEditPage);
