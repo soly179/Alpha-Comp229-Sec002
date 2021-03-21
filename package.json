@@ -5,7 +5,12 @@
   "scripts": {
     "start": "node ./server.js"
   },
+  "engines": {
+    "node": "^12.18.4",
+    "npm": "7.0.0"
+  },
   "dependencies": {
+    "@angular/cli": "^11.2.5",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.2",
     "cookie-parser": "~1.4.4",
