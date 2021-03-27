@@ -13,16 +13,16 @@ module.exports.displayIncidentList = (req, res, next) => {
             return console.error(err);
         }
         else
-        {
-         
-
-            res.render('incident/list', {title: 'Incident Records', IncidentList: incidentList});      
+        {         
+            res.render('incident/list', {title: 'Incident Records', IncidentList: incidentList,
+            displayName: req.user ? req.user.displayName : ''});      
         }
     });
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('incident/add', {title: 'Add Incident'})          
+    res.render('incident/add', {title: 'Add Incident',
+    displayName: req.user ? req.user.displayName : ''})          
 }
 
 module.exports.processAddPage = (req, res, next) => {
@@ -46,9 +46,7 @@ module.exports.processAddPage = (req, res, next) => {
             res.redirect('/incident-list');
         }
     });
-
 }
-
 
 /*Get Route for dispalying the Edit page - UPDATE OPERATION*/
 module.exports.displayEditPage = (req, res, next) => {
@@ -62,10 +60,9 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit-view
-            res.render('incident/edit',{title:'Edit Incident', incident: incidentToEdit});
+            res.render('incident/edit',{title:'Edit Incident', incident: incidentToEdit,
+            displayName: req.user ? req.user.displayName : ''});
         }
-
-
     });
 }
 
@@ -79,7 +76,6 @@ module.exports.processEditPage =(req, res, next) => {
         "recordnumber": req.body.recordnumber,
         "description": req.body.description,
         "priority": req.body.priority
-
     });
     Incident.updateOne({_id:id}, updatedIncident,(err) => {
         if(err)
@@ -104,8 +100,7 @@ module.exports.performDelete =(req, res, next) => {
             console.log(err);
             res.end(err);
         }
-        else{
-           
+        else{      
             res.redirect('/incident-list');
         }
     });
