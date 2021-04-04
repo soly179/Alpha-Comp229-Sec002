@@ -4,7 +4,6 @@ let mongoose = require('mongoose');
 
 // connect to our Incident Model
 let Book = require('../models/incident');
-
 let incidentController = require('../controllers/incident');
 
 
