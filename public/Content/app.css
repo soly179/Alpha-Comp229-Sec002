@@ -1,1 +1,621 @@
-/* custom css goes here */
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+
+/* =================================================================================================
+Login
+================================================================================================= */
+.loginsection{
+
+}
+
+.loginpage{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/Login.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;   
+    margin-bottom: auto;
+    background: rgba(241, 226, 234, 0.8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.btn-success{
+    padding-right: 2em;
+}
+.cancelbtn{
+    padding-right: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #28527a !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #28527a !important;
+}
+      
+
+/* =================================================================================================
+Registration
+================================================================================================= */
+
+.registration{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/reg.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+
+.registertitle{
+    background: rgb(204, 204, 204,0.5); 
+    box-shadow:20px 20px 10px grey; 
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a; 
+    font-family: sans-serif;
+    height: 2em;
+    text-align: center;
+    text-indent: 1em;
+    width: 130%;
+    
+
+}
+
+.regForm{
+   
+    padding-top: 5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* =================================================================================================
+Home
+================================================================================================= */
+
+#home{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/Home.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+.homeTitle{
+    background: rgb(204, 204, 204,0.5); 
+    box-shadow:20px 20px 10px grey; 
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a; 
+    font-family: sans-serif;
+    height: 3em;
+    text-align: center;
+    text-indent: 1em;
+   
+   
+
+}
+.htitle{
+    padding-top: 0.5em;
+}
+
+
+.HomeDes{
+    top: 15em;
+    text-align: left;
+    padding-left: 45em;
+    font-size: 20px;
+    color:#28527a;
+    font-weight: bold;
+    font-family: sans-serif;
+    position:fixed;
+    
+   
+
+}
+.loginbtn{
+    padding-left: 2.6em;
+    padding-top: 3.5em;
+}
+.login-btn{
+    position:relative;
+  
+   display: inline-block;
+   padding: 10px 30px;
+   font-size: 2em;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 2px;
+   background-color: #28527a;
+   color: #f3ebef;
+   font-size: 18px;
+   border-radius: 40px;
+   box-shadow: -2px -2px 8px rgba(225,225,225,1),
+   -2px -2px 12px rgba(225,225,225,0.5),
+   inset 2px 2px 4px rgba(225,225,225,0.1),
+   2px 2px 8px rgba(0,0,0,15);
+    
+
+}
+
+.login-btn:hover{
+    background-color: lightblue;
+    color: #28527a;
+    text-decoration: none;
+}
+
+   
+
+
+/* =================================================================================================
+Incident List
+================================================================================================= */
+
+.incidentlist{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background-color: #eec0c6;
+    background: url('/Assets/images/IncidentList.png');
+
+    /* background: url('/Assets/images/usrList.png') no-repeat center center fixed; */
+    /* opacity: 0.5; */
+/*     
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    background-color: #eec0c6;
+background-image: ; */
+/* background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 70%),url('/Assets/images/usrList.png'); */
+
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+
+
+
+.incident-title{
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.8);
+   width: 35%;
+   margin-left: 26em;
+   height: 5em;
+   text-align: center;
+   font-family: sans-serif;
+   text-shadow: teal;
+   box-shadow:20px 20px 10px grey; 
+   color: #28527a; 
+   font-weight: bolder;
+   
+   
+
+}
+
+.tbodydes{
+    font-size: 24px;
+    color:#28527a;
+
+}
+
+.incident-Table {
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(243, 243, 243, 0.8);
+    /* background-color:lightgray; */
+    margin-top: 3em;
+    font-family: sans-serif;
+    /* height: 38em; */
+    width: 90em;
+    margin-left: -8em;
+    box-shadow:20px 20px 10px grey;  
+    line-height: 1.6;
+
+}
+
+.ttitle{
+    color: #28527a;
+    font-family:sans-serif;
+    border-style: solid;
+    font-size: 28px;
+    text-align: center;
+}
+
+.listTitle{
+     /* background-color: lightgray; */
+   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+   background: rgba(255, 255, 255, 0.752);
+  width: 38%;
+  margin-left: 20em;
+  height: 5em;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: teal;
+  box-shadow:20px 20px 10px grey;  
+  color:#28527a;
+  font-weight: bold;
+ 
+
+
+}
+
+/* .table1{
+    /* padding-top: 4em; */
+    /* padding-top: 6em;
+
+    background: rgba(255, 255, 255, 0.952);
+    
+    word-break: keep-all;
+    height: 12em;
+    
+    
+    
+
+}  */
+
+.table1{
+    top: 10em;
+    padding-top: 5em;
+}
+.table{
+    
+    padding-top: 6em; 
+    box-shadow: -100px 10px 10px 1px #afabab;
+   
+   
+
+}
+.table tr td{
+    background: rgba(255, 255, 255, 0.852);
+
+
+}
+
+.table th{
+    background: rgba(255, 255, 255, 0.752);
+    color: #28527a;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.table td{
+    color: #035c68;
+    font-size: 17px;
+    text-align: left;
+    font-family: sans-serif;
+
+}
+
+/* =================================================================================================
+Add Incident
+================================================================================================= */
+.addincident{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/addIn.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+    
+
+}
+
+
+.addTitle{
+    background: rgb(204, 204, 204,0.5); 
+    box-shadow:20px 20px 10px grey; 
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a; 
+    font-family: sans-serif;
+    height: 2em;
+    text-align: center;
+    text-indent: 1em;
+    width: 130%;
+    
+
+}
+
+.addincidentdet{
+   
+    padding-top: 5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* =================================================================================================
+Edit Incident
+================================================================================================= */
+.editIncident{
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/addIn.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+    
+
+}
+
+
+.editTitle{
+    background: rgb(204, 204, 204,0.5); 
+    box-shadow:20px 20px 10px grey; 
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a; 
+    font-family: sans-serif;
+    height: 2em;
+    text-align: center;
+    text-indent: 1em;
+    width: 130%;
+    
+
+}
+
+.editdet{
+   
+    padding-top: 5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* =================================================================================================
+contact
+================================================================================================= */
+
+
+#contact {
+    min-height: 100%;
+   
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background: url('/Assets/images/Contactinfo.png') no-repeat center center fixed;
+    /* opacity: 0.5; */
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+    
+}
+
+.section-title {
+   /* background-color: lightgray; */
+   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+   width: 29%;
+   margin-left: 26em;
+   height: 5em;
+   text-align: center;
+   font-family: sans-serif;
+   text-shadow: teal;
+   box-shadow:20px 20px 10px grey;  
+   
+   
+
+   
+}
+
+.contact_title{
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a;
+    
+
+}
+
+.contact-description {
+    background: rgb(46, 28, 28); /* Fallback for older browsers without RGBA-support */
+    background: rgba(146, 142, 142, 0.4);
+    /* background-color:lightgray; */
+    margin-top: 3em;
+    font-family: sans-serif;
+    height: 38em;
+    width: 90em;
+    position: relative;
+    left: -5em;
+    box-shadow:20px 20px 10px grey;  
+    line-height: 1.6;
+    
+    
+    
+   
+}
+
+.about-title{
+    font-size: 29px;
+    font-weight: bold;
+    padding-top: 4em;
+    color: #28527a;
+    /* color: #ccf2f4; */
+    
+}
+
+.about-description{
+    font-size: 23px;
+    padding-top: 2em;
+    line-height: 2em;
+    color:#214566;
+}
+
+.contactinfo{
+    font-size: 20px;
+    padding-top: 5em;
+    padding-right: 1em;
+    color:#214566;
+   
+
+}
+
+.contacticon {
+    color: #214566;
+    font-size: 20px;
+    padding-right: 3em;
+
+}
+
+.social-media i{
+     color: #214566;
+     padding-top: 1em;
+     padding-right: 1em;
+  
+}
+
+
+
+.email-container{
+    padding-top: 6em;
+    
+}
+
+#bAdd{
+    background: #2674bd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 2em;
+    
+}
+
+#bAdd:hover{
+    background: #8ac4d0;
+}
+
+/* ===================================================================================== */
+
