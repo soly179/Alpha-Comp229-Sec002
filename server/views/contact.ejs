@@ -1,55 +1,97 @@
+
+
 <%- include partials/header.ejs%>
 <%- include partials/main_nav.ejs%>
 <head>
-   <style>
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 5px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-    
-  }
-  
-   </style>
+   
    </head>
  <!--Main Content-->
  <body>
 
 
-<div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-    <h4>  <table>
-        <tr>
-     647 856 9878<br>
-     alpha253@gmail.com
-        </tr>
-    </table></h4>
-    </div>
-    <div class="row">
-      <div class="column">
-        </form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-          <input type="button" value="Submit" onclick="history.back()">
+  <section id="contact" class="contact section-bg" > 
+    <div class="container">
+     
+
+      <div class="section-title">
+        <h2 class="contact_title">Get in touch</h2>
+      </div>
+
+      <div class="row contact-description">
+
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-about">
+            <h3 class="about-title">Team Alpha</h3>
+            <p class="about-description">If you have any questions, please feel free to drop us a line with some info about your issues and we will get back to you as soon as we can. Please allow a couple days for us to respond. Thank You!</p>
+            
+          </div>
+        </div>
+
+        <div class="col-xs-7 col-sm-6 col-lg-3">
+          <div class="contactinfo">
+            <div>
+              <i class="fas fa-map-marker-alt contacticon"></i>
+              <p>4534  Carlson Road,Prince George, British Columbia<br>V2L 5E5</p>
+            </div>
+
+            <div>
+              <i class="fas fa-envelope-square contacticon"></i>
+              <p>teamAlpha@my.centennialcollege.ca</p>
+            </div>
+
+            <div>
+              <i class="fas fa-phone contacticon"></i>
+              <p>250-561-9753</p>
+            </div>
+
+            <div class="social-media">
+              <i class="fab fa-whatsapp-square fa-2x"></i>
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-linkedin fa-2x "></i>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8 col-sm-6 email-container" >
+          <form action="" method="POST" class="email-form" id="emailfrm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="first-name" placeholder="First Name" data-rule="required" data-msg="Please enter your first name"/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="last-name" placeholder="Last Name" data-rule="required" data-msg="Please enter your last name"/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="contact-no" placeholder="Contact Number" pattern="[7-9]{1}[0-9]{9}" data-msg="Please enter your contact number"/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="text-center">
+              <a href="/" class="btn btn-primary bbtn" id="bAdd">Contact</a>  
+              <!-- <input type="button" class="btn btn-primary" value="Submit Button" onclick="redirecthome()" id="submit-btn"> -->
+            </div>
+          </form>
 
           
-         
-        </form>
+        </div>
+        
+
       </div>
+
     </div>
-  </div>
+    
+  </section><!-- End Contact Section -->
