@@ -1,0 +1,56 @@
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+  <a class="navbar-brand" href="/"> <img src="/Assets/images/logo.png" height="50" width="50">Alpha
+     
+  </a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+
+    <% if (title == "Home"){ %>
+    <li class="nav-item active">
+    <% } else  { %>
+    <li class="nav-item">
+    <% } %>
+      <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+    </li>
+
+    <% if (title == "Dashboard"){ %>
+      <li class="nav-item active">
+      <% } else  { %>
+      <li class="nav-item">
+      <% } %>
+    <a class="nav-link" href="/incident-list/dashboard"><i class="fas fa-address-book"></i> Dashboard</a>
+    </li>
+    
+    <% if (title == "Incidents") { %>
+    <li class="nav-item active">
+    <% } else  { %>
+    <li class="nav-item">
+    <% } %>
+      <a class="nav-link" href="/incident-list"><i class="fas fa-book"></i> Incidents List </a>
+    </li>
+
+    <% if (title == "Contact") { %>
+    <li class="nav-item active">
+    <% } else  { %>
+    <li class="nav-item">
+    <% } %>
+      <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
+    </li>
+
+    <% if(typeof displayName=='string' && displayName) { %>
+      <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %>
+      </li>
+      <li class="nav-item"><a href="/user/logout" class="nav-link">
+          <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+      <% } else { %>
+        <li class="nav-item"><a href="/user/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+        <% } %>
+</div>
+</nav>
