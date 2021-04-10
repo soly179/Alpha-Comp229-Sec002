@@ -237,7 +237,97 @@ background-size: cover;
     text-decoration: none;
 }
 
+/* =================================================================================================
+Dashboard
+================================================================================================= */
+.dashboard{
+    min-height: 100%;
    
+    margin-left: 15em;
+    /* text-align: center; */
+    height: 100%;
+    margin: 0%;
+    background-color: #eec0c6;
+    background: url('/Assets/images/Dashboard.png');
+
+    
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+.listTitle-Dash{
+    background: rgba(255, 255, 255, 0.745); 
+    box-shadow:20px 20px 10px grey; 
+    font-size: 44px;
+    font-weight: bold;
+    color:#28527a; 
+    font-family: sans-serif;
+    height: 3em;
+    text-align: center;
+    text-indent: 1em;
+    padding-bottom: 2em;
+}
+
+.heading{
+    position: relative;
+    top: 1em;
+}
+
+.card-columns{
+    position: relative;
+    display: inline-block;
+    margin-top: 6em;
+    background: rgba(243, 243, 243, 0.8);
+    align-items: center;
+    height: 20em;
+    text-align: center;
+    padding-left: 2em;
+   
+  
+}
+.dashboard-btn{
+    position: relative;
+    left: 3.5em;
+}
+
+.card{
+    position: relative;
+   
+    left: 3em;
+    padding-right: 3em;
+    margin-top: 2em;
+    margin-left: 5em;
+   
+    
+}
+
+
+.card-title{
+    color: #28527a; 
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+
+.card-description{
+    color: #28527a;
+    font-size: 20px;
+
+}
+
+.text-muted{
+    /* line-height: 1em; */
+    color:#214566;
+    font-weight: bolder;
+    font-size: 13px;
+    /* font-size: 14px; */
+
+}
 
 
 /* =================================================================================================
@@ -254,17 +344,7 @@ Incident List
     background-color: #eec0c6;
     background: url('/Assets/images/IncidentList.png');
 
-    /* background: url('/Assets/images/usrList.png') no-repeat center center fixed; */
-    /* opacity: 0.5; */
-/*     
-    background-color: #abe9cd;
-    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-    background-color: #eec0c6;
-background-image: ; */
-/* background-color: #eec0c6;
-background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 70%),url('/Assets/images/usrList.png'); */
-
-
+    
 -webkit-background-size: cover;
 
 -moz-background-size: cover;
