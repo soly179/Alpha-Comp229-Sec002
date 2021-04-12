@@ -15,10 +15,11 @@
     
                 <% if(typeof displayName=='string' && displayName) { %>
                     <a href="/incident-list/add" class="btn btn-primary addincidentbtn" role="button">
-                    <i class="fas fa-plus-circle"></i> Add a Incident</a>
+                    <i class="fas fa-plus-circle"></i> Add an Incident</a>
                     <% } %>
                 <br>
-                <div class="table-responsive table1">
+                <!--div class="table-responsive table1"-->
+                    <div class="offset-md-1 col-md-11"></div>
                     <table class="table table-bordered table-striped table-hover" id="TableContent">
                         <!-- Header Row-->
                         <tr class="d-flex">
@@ -35,7 +36,7 @@
                                 <th class="text-center col-2">Customer</th>
                                 <th class="text-center col-2">RecordNumber</th>
                                 <th class="col-4">Description</th>
-                                <th class="text-center col-1">Priority</th>
+                                <th class="text-center col-2">Priority</th>
                             <% } %>
                         </tr>
         
@@ -62,7 +63,7 @@
                                         <td class="text-center col-2"><%= IncidentList[count].customer %></td>
                                         <td class="text-center col-2"><%= IncidentList[count].recordnumber %></td>
                                         <td class="col-4"><%= IncidentList[count].description %></td>
-                                        <td class="text-center col-1"><%= IncidentList[count].priority %></td>
+                                        <td class="text-center col-2"><%= IncidentList[count].priority %></td>
                                     <% } %>
                                 </tr>
                         <% } %>
