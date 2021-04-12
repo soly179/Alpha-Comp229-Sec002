@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Mukta');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Raleway', sans-serif;
 	height:100vh;
 	min-height:550px;
 	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
@@ -16,9 +16,6 @@ html, body {
 /* =================================================================================================
 Login
 ================================================================================================= */
-.loginsection{
-
-}
 
 .loginpage{
     min-height: 100%;
@@ -133,8 +130,8 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
-    font-family: sans-serif;
-    height: 2em;
+    font-family: 'Raleway', sans-serif;
+    height: 20%;
     text-align: center;
     text-indent: 1em;
     width: 130%;
@@ -145,7 +142,7 @@ background-size: cover;
 .regForm{
    
     padding-top: 5em;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -179,7 +176,7 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: 3em;
     text-align: center;
     text-indent: 1em;
@@ -199,7 +196,7 @@ background-size: cover;
     font-size: 20px;
     color:#28527a;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     position:fixed;
     
    
@@ -265,7 +262,7 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: 3em;
     text-align: center;
     text-indent: 1em;
@@ -362,7 +359,7 @@ background-size: cover;
    margin-left: 26em;
    height: 5em;
    text-align: center;
-   font-family: sans-serif;
+   font-family: 'Raleway', sans-serif;
    text-shadow: teal;
    box-shadow:20px 20px 10px grey; 
    color: #28527a; 
@@ -383,7 +380,7 @@ background-size: cover;
     background: rgba(243, 243, 243, 0.8);
     /* background-color:lightgray; */
     margin-top: 3em;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     /* height: 38em; */
     width: 90em;
     margin-left: -8em;
@@ -405,32 +402,15 @@ background-size: cover;
    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
    background: rgba(255, 255, 255, 0.752);
   width: 38%;
+  height: 30%;
   margin-left: 20em;
-  height: 5em;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: teal;
   box-shadow:20px 20px 10px grey;  
   color:#28527a;
   font-weight: bold;
- 
-
-
 }
-
-/* .table1{
-    /* padding-top: 4em; */
-    /* padding-top: 6em;
-
-    background: rgba(255, 255, 255, 0.952);
-    
-    word-break: keep-all;
-    height: 12em;
-    
-    
-    
-
-}  */
 
 .table1{
     top: 10em;
@@ -456,14 +436,14 @@ background-size: cover;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .table td{
     color: #035c68;
     font-size: 17px;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -498,7 +478,7 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: 2em;
     text-align: center;
     text-indent: 1em;
@@ -510,7 +490,7 @@ background-size: cover;
 .addincidentdet{
    
     padding-top: 5em;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -546,7 +526,7 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: 2em;
     text-align: center;
     text-indent: 1em;
@@ -558,7 +538,7 @@ background-size: cover;
 .editdet{
    
     padding-top: 5em;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -597,7 +577,7 @@ background-size: cover;
    margin-left: 26em;
    height: 5em;
    text-align: center;
-   font-family: sans-serif;
+   font-family: 'Raleway', sans-serif;
    text-shadow: teal;
    box-shadow:20px 20px 10px grey;  
    
@@ -610,7 +590,7 @@ background-size: cover;
     font-size: 44px;
     font-weight: bold;
     color:#28527a;
-    
+    height: 30%;
 
 }
 
@@ -619,7 +599,7 @@ background-size: cover;
     background: rgba(146, 142, 142, 0.4);
     /* background-color:lightgray; */
     margin-top: 3em;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: 38em;
     width: 90em;
     position: relative;

@@ -9,19 +9,22 @@
       <div class=" homeTitle">
         <div class="htitle">
           <h1 class="display-4"> <b> Welcome to <%= title %> page</b></h1>
-
         </div>
-        
         
       </div>
       <div class="HomeDes">
-        <h1> <b>Team Alpha</b> </h1>
-        <p>Experts in Incident Management</p>
-        <div class="loginbtn">
-          <a href='/user/login' class="login-btn"><span class="btntxt">Login</span></a>
-
-        </div>
-        
+        <% if(typeof displayName=='string' && displayName) { %>
+          <h1> <b>Welcome, <%= displayName %></b> </h1>
+          <div class="loginbtn">
+            <a href='/incident-list' class="login-btn"><span class="btntxt">Incidents</span></a>
+          </div>
+        <% } else { %>
+          <h1> <b>Team Alpha</b> </h1>
+          <p>Experts in Incident Management</p>
+          <div class="loginbtn">
+            <a href='/user/login' class="login-btn"><span class="btntxt">Login</span></a>
+          </div>
+          <% } %>
       </div>
     </div>
   </section>
