@@ -1,0 +1,43 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!--Content for the Dashboard Page-->
+<section class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-1 col-md-11">
+                <div class="listTitle-Dash">
+                    <h1 class="heading"><b><%= title %></b></h1>
+
+                </div>
+                <% if (incidentList.length > 0) { %>
+                    <div class="container">
+                        <div class="card-columns">
+                            <% for(let count = 0; count < incidentList.length; count++) { %>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= incidentList[count].name %></h5>
+                                    <p class="card-text card-description">Problem Description</p>
+                                    <p class="card-text"><small class="text-muted"><%= incidentList[count].description %></small></p>
+                                    <div class="d-flex justify-content-between align-items-center dashboard-btn">
+                                        <div class="btn-group">
+                                            <p><a class="btn btn-sm btn-outline-primary" href="/incident-list/edit/<%= incidentList[count]._id %>" role="button">Update</a></p>
+                                            <p><a href="/incident-list/dashboard/delete/<%= incidentList[count]._id %>" class="btn btn-outline-danger btn-sm cancel" style="margin-left: 5px">Delete</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                            <% } else { %>
+                            <br>
+                            <div class="container">
+                                <h5 class="display-4" style="color: white">You have no incident to display</h5>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>

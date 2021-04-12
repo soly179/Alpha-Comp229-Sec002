@@ -105,3 +105,29 @@ module.exports.performDelete =(req, res, next) => {
         }
     });
 }
+
+module.exports.performDeleteFromDashBoard = (req, res, next) => {
+    let id = req.params.id;
+
+    Incident.remove({_id: id}, (err) => {
+        if(err){
+            console.log(err);
+            res.end(err);
+        } else {
+            // refresh the Incident list
+            res.redirect('/incident-list/dashboard');
+        }
+    });
+};
+
+module.exports.displayDashboard = (req, res, next) => {
+    Incident.find((err, incidentList) => {
+        if(err){
+            console.log(err);
+            res.end(err);
+        } else {
+            res.render('incident/dashboard', { title: 'Incidents Dashboard', incidentList: incidentList,
+                                                    displayName: req.user ? req.user.displayName : ''});
+        }
+    });    
+}

@@ -26,10 +26,15 @@ router.get('/edit/:id', incidentController.displayEditPage);
 */
 router.post('/edit/:id', incidentController.processEditPage);
 
-
-/* add your code to 
+/* 
 *  GET to perform  Deletion - DELETE Operation 
 */
 router.get('/delete/:id',incidentController.performDelete);
+
+/* GET to Show All Incidents -  */
+router.get('/dashboard', incidentController.displayDashboard);
+
+/* GET to perform Deletion From DashBoard - DELETE operation */
+router.get('/dashboard/delete/:id', incidentController.performDeleteFromDashBoard);
 
 module.exports = router;
