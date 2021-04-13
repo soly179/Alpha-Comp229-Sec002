@@ -15,7 +15,8 @@ module.exports.displayIncidentList = (req, res, next) => {
         else
         {         
             res.render('incident/list', {title: 'Incident Records', IncidentList: incidentList,
-            displayName: req.user ? req.user.displayName : ''});      
+            displayName: req.user ? req.user.displayName : '',
+            user: req.user });      
         }
     });
 }
