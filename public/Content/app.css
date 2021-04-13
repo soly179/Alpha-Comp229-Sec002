@@ -106,7 +106,6 @@ Registration
 
 .registration{
     min-height: 100%;
-   
     margin-left: 15em;
     /* text-align: center; */
     height: 100%;
@@ -115,18 +114,13 @@ Registration
     /* opacity: 0.5; */
 
 -webkit-background-size: cover;
-
 -moz-background-size: cover;
-
 -o-background-size: cover;
-
 background-size: cover;
-
 }
 
 .registertitle{
-    background: rgb(204, 204, 204,0.5); 
-    box-shadow:20px 20px 10px grey; 
+    background: rgb(204, 204, 204,0.5);  
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
@@ -141,10 +135,22 @@ background-size: cover;
 
 .regForm{
    
-    padding-top: 5em;
+
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 18px;
+
+    height: 450px;
+    width: 350px;
+    margin-top: 50px;   
+    margin-bottom: auto;
+    margin-left: 50px;
+    background: rgba(241, 226, 234, 0.8);
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
 /* =================================================================================================
@@ -153,13 +159,10 @@ Home
 
 #home{
     min-height: 100%;
-   
     margin-left: 15em;
-    /* text-align: center; */
     height: 100%;
     margin: 0%;
     background: url('/Assets/images/Home.png') no-repeat center center fixed;
-    /* opacity: 0.5; */
 
 -webkit-background-size: cover;
 
@@ -172,12 +175,12 @@ background-size: cover;
 }
 .homeTitle{
     background: rgb(204, 204, 204,0.5); 
-    box-shadow:20px 20px 10px grey; 
+    /*box-shadow:20px 20px 10px grey; */
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
     font-family: 'Raleway', sans-serif;
-    height: 3em;
+    height: 3.5em;
     text-align: center;
     text-indent: 1em;
    
@@ -198,9 +201,6 @@ background-size: cover;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     position:fixed;
-    
-   
-
 }
 .loginbtn{
     padding-left: 2.6em;
@@ -220,11 +220,6 @@ background-size: cover;
    color: #f3ebef;
    font-size: 18px;
    border-radius: 40px;
-   box-shadow: -2px -2px 8px rgba(225,225,225,1),
-   -2px -2px 12px rgba(225,225,225,0.5),
-   inset 2px 2px 4px rgba(225,225,225,0.1),
-   2px 2px 8px rgba(0,0,0,15);
-    
 
 }
 
@@ -232,15 +227,17 @@ background-size: cover;
     background-color: lightblue;
     color: #28527a;
     text-decoration: none;
+    box-shadow: -2px -2px 8px rgba(225,225,225,1),
+    -2px -2px 12px rgba(225,225,225,0.5),
+    inset 2px 2px 4px rgba(225,225,225,0.1),
+    2px 2px 8px rgba(0,0,0,15);
 }
 /* =================================================================================================
 Dashboard
 ================================================================================================= */
 .dashboard{
     min-height: 100%;
-   
     margin-left: 15em;
-    /* text-align: center; */
     height: 100%;
     margin: 0%;
     background-color: #eec0c6;
@@ -256,9 +253,9 @@ Dashboard
 background-size: cover;
 
 }
+
 .listTitle-Dash{
     background: rgba(255, 255, 255, 0.745); 
-    box-shadow:20px 20px 10px grey; 
     font-size: 44px;
     font-weight: bold;
     color:#28527a; 
@@ -275,31 +272,9 @@ background-size: cover;
 }
 
 .card-columns{
-    position: relative;
-    display: inline-block;
-    margin-top: 6em;
-    background: rgba(243, 243, 243, 0.8);
-    align-items: center;
-    height: 20em;
-    text-align: center;
-    padding-left: 2em;
-   
-  
-}
-.dashboard-btn{
-    position: relative;
-    left: 3.5em;
-}
-
-.card{
-    position: relative;
-   
-    left: 3em;
-    padding-right: 3em;
-    margin-top: 2em;
-    margin-left: 5em;
-   
-    
+    margin-top: 6em; 
+   background: rgba(243, 243, 243, 0.8);
+   padding: 2em;
 }
 
 
@@ -309,21 +284,12 @@ background-size: cover;
     font-size: 25px;
 
 }
-
+ 
 .card-description{
     color: #28527a;
     font-size: 20px;
 
 }
-
-.text-muted{
-    /* line-height: 1em; */
-    color:#214566;
-    font-weight: bolder;
-    font-size: 13px;
-    /* font-size: 14px; */
-
-}  
 
 /* =================================================================================================
 Incident List
@@ -333,7 +299,6 @@ Incident List
     min-height: 100%;
    
     margin-left: 15em;
-    /* text-align: center; */
     height: 100%;
     margin: 0%;
     background-color: #eec0c6;
@@ -350,8 +315,6 @@ background-size: cover;
 
 }
 
-
-
 .incident-title{
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.8);
@@ -361,12 +324,8 @@ background-size: cover;
    text-align: center;
    font-family: 'Raleway', sans-serif;
    text-shadow: teal;
-   box-shadow:20px 20px 10px grey; 
    color: #28527a; 
    font-weight: bolder;
-   
-   
-
 }
 
 .tbodydes{
@@ -383,8 +342,7 @@ background-size: cover;
     font-family: 'Raleway', sans-serif;
     /* height: 38em; */
     width: 90em;
-    margin-left: -8em;
-    box-shadow:20px 20px 10px grey;  
+    margin-left: -8em; 
     line-height: 1.6;
 
 }
@@ -407,7 +365,6 @@ background-size: cover;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   text-shadow: teal;
-  box-shadow:20px 20px 10px grey;  
   color:#28527a;
   font-weight: bold;
 }
@@ -419,10 +376,7 @@ background-size: cover;
 .table{
     
     padding-top: 6em; 
-    box-shadow: -100px 10px 10px 1px #afabab;
    
-   
-
 }
 .table tr td{
     background: rgba(255, 255, 255, 0.852);
@@ -575,15 +529,10 @@ background-size: cover;
     background: rgba(204, 204, 204, 0.5);
    width: 29%;
    margin-left: 26em;
-   height: 5em;
+   height: 7em;
    text-align: center;
    font-family: 'Raleway', sans-serif;
-   text-shadow: teal;
-   box-shadow:20px 20px 10px grey;  
-   
-   
-
-   
+   text-shadow: teal;   
 }
 
 .contact_title{
@@ -591,7 +540,7 @@ background-size: cover;
     font-weight: bold;
     color:#28527a;
     height: 30%;
-
+    padding-top: 0.5em;
 }
 
 .contact-description {

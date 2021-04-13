@@ -79,7 +79,13 @@ module.exports.displayRegisterPage = (req, res, next) => {
     }
     else
     {
-        return res.redirect('/');
+        return res.render('auth/register',
+        {
+            title: 'Edit Profile',
+            messages: req.flash('registerMessage'),
+            displayName: req.user ? req.user.displayName : '',
+            user: req.user
+        });
     }
 }
 module.exports.processRegisterPage = (req, res, next) => {
