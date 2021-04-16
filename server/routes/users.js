@@ -15,6 +15,14 @@ router.get('/register', userController.displayRegisterPage);
 /* POST Route for processing the Register page */
 router.post('/register', userController.processRegisterPage);
 
+/* GET Route for displaying the Register page */
+router.get('/update/:id', userController.displayUserPage);
+
+/* POST Route for processing the Register page */
+router.post('/update/:id', userController.updateUserPage);
+
 /* GET to perform UserLogout */
 router.get('/logout', userController.performLogout);
+
 module.exports = router;
+

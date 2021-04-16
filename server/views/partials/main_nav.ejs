@@ -46,8 +46,9 @@
     </li>
 
     <% if(typeof displayName=='string' && displayName) { %>
-      <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %>
-      </li>
+      <li class="nav-item"><a href="/user/update/<%= user.id %>" class="nav-link">
+        <i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %>
+      </a></li>
       <li class="nav-item"><a href="/user/logout" class="nav-link">
           <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
       <% } else { %>

@@ -129,6 +129,46 @@ module.exports.processRegisterPage = (req, res, next) => {
     });
 }
 
+module.exports.displayUserPage = (req, res, next) => {
+    let id =req.params.id;
+    User.findById(id,(err,user)=>{
+        if(err)
+        {
+            console.log(err);
+            res.end(err);
+        }
+        else
+        {
+            //show the edit-view
+            res.render('auth/updateUser',{title:'Edit User', user: user,
+            displayName: req.user ? req.user.displayName : ''});
+        }
+    });
+}
+module.exports.updateUserPage =(req, res, next) => {
+    let id = req.params.id
+    let updateduser = User({
+        "_id" :id,
+        "username": req.body.username,
+        "email": req.body.email,
+        "displayName": req.body.displayName,
+       
+    });
+    User.updateOne({_id:id}, updateduser,(err) => {
+        if(err)
+        {
+            console.log(err);
+            res.end(err);
+        }
+        else{
+            //refresh the incidentlist
+            res.redirect('/incident-list');
+        }
+
+    });
+}
+    
+
 module.exports.performLogout = (req, res, next) => {
     req.logout();
     res.redirect('/');
